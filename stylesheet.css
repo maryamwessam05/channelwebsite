@@ -27,7 +27,7 @@ body{
 header{
     position: fixed;
     top: 34px;
-
+    left: 68px;
     width: 1200px;
 
     border-radius: 92px;
@@ -131,7 +131,7 @@ border-radius: 38px;
 background: rgba(31, 49, 49, 0.52);
 }
 
-#section1{
+#section1_details{
     display: flex;
     height: 720px;
     padding: 91px 40px;
