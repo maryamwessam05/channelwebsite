@@ -31,7 +31,7 @@ header{
     width: 1200px;
 
     border-radius: 92px;
-    border: 1px solid #444444;
+    border: 1px solid #858585;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(153, 153, 153, 0.07) 100%);
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(8.050000190734863px);
@@ -131,3 +131,14 @@ border-radius: 38px;
 background: rgba(31, 49, 49, 0.52);
 }
 
+#section1{
+    display: flex;
+    height: 720px;
+    padding: 91px 40px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background-image: url(img/Gradient\ Mask\ Group.png);
+}
