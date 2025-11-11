@@ -3,7 +3,7 @@ document.getElementById("nav_items").innerHTML += `
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="">Browse</a>
+                    <a href="browse.html">Browse</a>
                 </li>
                 <li>
                     <a href="">Contact</a>
