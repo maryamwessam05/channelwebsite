@@ -243,10 +243,13 @@ cursor: pointer;
 }
 /* //lamar// */
 .container {
-    padding: 40px 30px;
+    padding: 200px 30px;
+    width: 1200px;
+    height: 470px;
 }
 
 h1 {
+
     font-size: var(--subtitle);
     font-weight: 400;
     margin-bottom: 30px;
@@ -256,7 +259,7 @@ h1 {
 .movies-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .movie-card {
@@ -265,8 +268,16 @@ h1 {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s;
+   
+width: 220px;
+flex-direction: column;
+align-items: flex-start;
+gap: 28px;
 }
-
+.movie-card img{
+    height: 330px;
+    width: 220px;
+}
 .movie-card:hover {
     transform: scale(1.05);
 }
@@ -279,11 +290,6 @@ h1 {
 }
 
 .movie-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 40px 15px 15px;
 
     font-size: var(--body);
     font-weight: 400;
