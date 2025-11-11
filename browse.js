@@ -37,11 +37,12 @@ let moviesGrid = document.getElementById('moviesGrid');
         
         for (let i = 0; i < movies.length; i++) {
             let movieCard = `
+             <a href="details.html">
                 <div class="movie-card">
                     <img src="${movies[i].poster}" alt="${movies[i].title}" class="movie-poster">
                        <h2 class="movie-title">${movies[i].title}</h2>
                 </div>   
-          
+            </a>
             `;
             moviesGrid.innerHTML += movieCard;
         }
