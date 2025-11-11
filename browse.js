@@ -1,19 +1,30 @@
-const movies = [
+document.getElementById("nav_items").innerHTML += `
+<li class="selected">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Browse</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>`
+
+let movies = [
     {
         title: "Dune part: 2",
-        poster: "dune .jpg"
+        poster: "img/dune .jpg"
     },
     {
         title: "Culpa Nuestra",
-        poster: "culpa.jpg"
+        poster: "img/culpa.jpg"
     },
     {
         title: "The map that leads to you",
-        poster: "map that leads.jpg"
+        poster: "img/map that leads.jpg"
     },
     {
         title: "Wicked",
-        poster: "wicked.jpg"
+        poster: "img/wicked.jpg"
     },
     {
         title: "It ends with us",
@@ -22,14 +33,22 @@ const movies = [
 ];
 
 
-const moviesGrid = document.getElementById('moviesGrid');
+let moviesGrid = document.getElementById('moviesGrid');
+        
+        for (let i = 0; i < movies.length; i++) {
+            let movieCard = `
+                <div class="movie-card">
+                    <img src="${movies[i].poster}" alt="${movies[i].title}" class="movie-poster">
+                       <h2 class="movie-title">${movies[i].title}</h2>
+                </div>   
+          
+            `;
+            moviesGrid.innerHTML += movieCard;
+        }
 
-movies.forEach(movie => {
-    const movieCard = `
-        <div class="movie-card">
-            <img src="${movie.poster}" alt="${movie.title}" class="movie-poster">
-            <div class="movie-title">${movie.title}</div>
-        </div>
-    `;
-    moviesGrid.innerHTML += movieCard;
-});
+
+
+
+
+  
+
