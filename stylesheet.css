@@ -19,17 +19,19 @@
 }
 body{
     background-color: var(--black);
+    display: flex;
     width: 1280px;
     margin: 0 auto;
     position: relative;
+    flex-direction: column;
 }
 
 header{
     position: fixed;
+    align-self: center;
     top: 34px;
-    left: 68px;
+    margin: 0 auto;
     width: 1200px;
-
     border-radius: 92px;
     border: 1px solid #858585;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(153, 153, 153, 0.07) 100%);
